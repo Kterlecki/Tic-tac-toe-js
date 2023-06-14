@@ -7,5 +7,11 @@ function handleCellClick(event){
     {
         cell.textContent = currentPlayer;
         currentPlayer = currentPlayer === "X" ? "O" : "X";
+        updateCurrentPlayerText();
     }
+}
+
+function updateCurrentPlayerText(){
+    const currentPlayerElement = document.getElementById("currentPlayer");
+    currentPlayerElement.textContent = "Current Player :" + currentPlayer
 }
