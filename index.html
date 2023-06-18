@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <table>
+        <tr>
+            <td onclick="handleCellClick(event)"></td>
+            <td onclick="handleCellClick(event)"></td>
+            <td onclick="handleCellClick(event)"></td>
+          </tr>
+          <tr>
+            <td onclick="handleCellClick(event)"></td>
+            <td onclick="handleCellClick(event)"></td>
+            <td onclick="handleCellClick(event)"></td>
+          </tr>
+          <tr>
+            <td onclick="handleCellClick(event)"></td>
+            <td onclick="handleCellClick(event)"></td>
+            <td onclick="handleCellClick(event)"></td>
+          </tr>
+    </table>
+
+    <div id="currentPlayer">Current Player: X</div>
+    <div id="playerXScore">Player X score: 0</div>
+    <div id="playerOScore">Player O score: 0</div>
+    <button onclick="resetGame()">Reset</button>
     <script src="script.js">
 
     </script>
